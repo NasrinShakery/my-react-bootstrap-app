@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './customStyle.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
@@ -10,8 +11,7 @@ const App = () => {
       <Container>
          <Row>
             <NavBar></NavBar>
-            <Col></Col>
-            <Col><Header/></Col>
+            <Header/>
          </Row>
       </Container>
 
