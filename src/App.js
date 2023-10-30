@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+import {Container, Row, Col} from 'react-bootstrap';
+import NavBar from './components/NavBar/NavBar';
+import './customStyle.css';
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Container>
+         <Row>
+            <NavBar></NavBar>
+            <Col></Col>
+            <Col></Col>
+         </Row>
+      </Container>
+    </>
   )
 }
 

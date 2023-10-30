@@ -1,0 +1,10 @@
+.dir-rtl{
+   direction: rtl;
+}
+.dir-ltr{
+   direction: ltr;
+}
+
+.text-align-end{
+   text-align: end!important;
+}
