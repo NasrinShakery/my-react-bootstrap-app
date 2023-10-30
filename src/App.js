@@ -10,8 +10,7 @@ const App = () => {
       <Container>
          <Row>
             <NavBar></NavBar>
-            <Col></Col>
-            <Col><Header/></Col>
+            <Header/>
          </Row>
       </Container>
 
