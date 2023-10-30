@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
 
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
          <Row>
             <NavBar></NavBar>
             <Col></Col>
-            <Col></Col>
+            <Col><Header/></Col>
          </Row>
       </Container>
 
