@@ -1,6 +1,7 @@
 import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import { Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 function Header() {
    return (
@@ -10,12 +11,12 @@ function Header() {
                <Image src="./images/beauty.png" fluid />
             </Col>
 
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={6} className=" d-flex justify-center item-center" >
                <Card className="no-border">
                   <Card.Header>
                      What is a perfect daily skin care routine?
                   </Card.Header>
-                  <Card.Body>
+                  <Card.Body style={{height:"fit-content"}}>
                      <blockquote className="blockquote mb-0">
                         <p>
                            {" "}
@@ -33,7 +34,7 @@ function Header() {
                      </blockquote>
                   </Card.Body>
                </Card>
-               <Image src="./images/beauty1.png" fluid />
+               {/* <Image src="./images/beauty1.png" fluid /> */}
             </Col>
          </Row>
       </>
