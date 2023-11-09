@@ -7,12 +7,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {FiPhoneCall} from 'react-icons/fi';
 import {BsShopWindow} from 'react-icons/bs';
 import {FaSearch} from 'react-icons/fa';
+import { LinkContainer } from 'react-router-bootstrap'
 
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Beauty Shop &#128171;</Navbar.Brand>
+        <LinkContainer to="/"><Navbar.Brand href="#">Beauty Shop &#128171;</Navbar.Brand></LinkContainer>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,8 +21,8 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1"><BsShopWindow/> Shop</Nav.Link>
-            <Nav.Link href="#action2"><FiPhoneCall/> Contact Us</Nav.Link>
+            <LinkContainer to="/Shop"><Nav.Link href=""><BsShopWindow/> Shop</Nav.Link></LinkContainer>
+            <LinkContainer to="/ContactUs"><Nav.Link href=""><FiPhoneCall/> Contact Us</Nav.Link></LinkContainer>
             <NavDropdown title="Products" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Beauty products</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
