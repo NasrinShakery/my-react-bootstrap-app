@@ -3,7 +3,7 @@ import "./customStyle.css";
 import { Container, Row, Col } from "react-bootstrap";
 import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/Header/Header";
-import ProductCard from "./components/ProductCard/ProductCard";
+import ProductCards from "./components/ProductCard/ProductCards";
 
 const App = () => {
    return (
@@ -11,22 +11,16 @@ const App = () => {
          <Container>
             <Row>
                <NavBar></NavBar>
+            </Row>
+
+            
+            <Row>
                <Header />
             </Row>
-            {/* <main className="cardWrapper d-flex card-deck">
             
-          
-         </main> */}
+            <ProductCards />
 
-            <Row className="cardWrapper d-flex justify-content-between">
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-               <ProductCard />
-            </Row>
+            
          </Container>
       </>
    );
