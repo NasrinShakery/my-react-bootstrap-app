@@ -9,10 +9,11 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 
 const ProductDetails = () => {
-   let [products, setProducts] = useState(productData);
+   // let [products, setProducts] = useState(productData);
    let params = useParams();
-   let hasParams = products.some((product) => product.id == params.productID);
-   // let img = products.find((product) => product.id === params.productID).img;
+   let hasParams = productData.some((product) => product.id == params.productID);
+   let mainProduct = productData.find((product) => product.id == params.productID);
+   let img = mainProduct.img;
    return (
       <>
 
@@ -26,20 +27,20 @@ const ProductDetails = () => {
                <div>ProductDetails</div>
                <h1>{params.productID}</h1>
                product :
-               {products.find((product) => product.id == params.productID).name}
+               {productData.find((product) => product.id == params.productID).name}
                <br />
-               {/* img: {img} */}
+               img: {img}
                <br />
                <Container>
                   <Row>
                      <Col xs={6} md={4}>
-                        {/* <Image src={img} rounded /> */}
+                        <Image src={mainProduct.img} rounded />
                      </Col>
                      <Col xs={6} md={4}>
-                        <Image src="./images/product4.jpg" roundedCircle />
+                        {/* <Image src="./images/product4.jpg"  roundedCircle /> */}
                      </Col>
                      <Col xs={6} md={4}>
-                        <Image src="holder.js/171x180" thumbnail />
+                        {/* <Image src="holder.js/171x180" thumbnail /> */}
                      </Col>
                   </Row>
                </Container>
