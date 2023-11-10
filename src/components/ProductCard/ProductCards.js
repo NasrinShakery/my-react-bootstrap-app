@@ -8,7 +8,7 @@ const ProductCards = () => {
    return (
       <>
          <Row className="cardWrapper d-flex justify-content-between">
-            {products.map(productCard => (<ProductCard key={productCard.id} />))}
+            {products.map(productCard => (<ProductCard key={productCard.id} {...productCard}/>))}
          </Row>
       </>
    );
