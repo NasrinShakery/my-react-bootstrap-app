@@ -3,6 +3,7 @@ import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
+import Panel from "./pages/Panel";
 import NotFound from "./pages/NotFound";
 
 let router = [
@@ -12,6 +13,7 @@ let router = [
    { path:"/product/:productID", element: <ProductDetails/> },
    { path:"/ContactUs", element: <ContactUs/> },
    { path:"/Login", element: <Login/> },
+   { path:"/Panel", element: <Panel/> },
    { path:"*", element:<NotFound/> },
 ]
 
